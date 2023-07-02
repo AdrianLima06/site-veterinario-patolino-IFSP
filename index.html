@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patolino Veterinario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header1">
+        <p>Clínica veterinária do Patolino</p> 
+        <p> patolinoroberval@gmail.com</p>
+    </div>
+    
+    <header>
+        <div class="logo">
+            <h1>Patolino Vet</h1>
+        </div>
+        <div class="cabecalho">
+            <nav>
+                <ul>
+                    <a href="#home">Home</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#animais">Animais</a>
+                    <a href="#localizacao">Localização</a>
+                </ul>
+            </nav>
+        </div>
+        <div class="btn">
+            <button onclick="openPopup()">Agendamento</button>
+        </div>
+    </header>
+    <div class="container" id="home">
+        <div class="imagem">
+            <img src="patolino.png" alt="" width="600px">
+        </div>
+       <div class="texto">
+        <h1>Patolino Veterinário</h1>
+        <p>Eu cuido do seu animalzinho com o maior carinho e dedicação, pois <br> acredito 
+            que cada criatura de quatro patas merece o melhor <br> cuidado possível. 
+            Como veterinário, minha paixão por animais e meu <br> 
+            compromisso com seu bem-estar são o que impulsionam minha prática <br> diária.</p>
+            <a href="#sobre">Conheça mais sobre mim</a>
+        </div>
+    </div>
+    <div class="sobre">
+        <h1>Sobre mim</h1>
+    </div>
+    <div class="patolino" id="sobre">
+        <img src="patolinosobre.png" alt="">
+        <h1>Um veterinário especializado</h1>
+        <div class="paragraph">
+        <p>Quando seu amado pet entra em meu consultório,  vejo mais do que apenas <br> um animal de 
+            estimação; vejo um membro querido da sua família. Entendo <br> que eles possuem necessidades 
+            únicas e busco oferecer um atendimento <br> personalizado, com foco na saúde e felicidade deles. <br>
+        <br>
+            Minha formação e experiência me permitem lidar com uma ampla variedade <br> de condições
+            médicas. Seja uma simples consulta de rotina, uma vacinação, <br> um tratamento para uma
+            doença específica ou uma cirurgia complexa, estou <br> aqui para proporcionar os cuidados 
+            necessários para que seu animal tenha <br> uma vida plena e saudável. <br>  <br>    
+        <a href="#animais">Veja os Animais que eu Atendo</a>
+ 
+        </p>
+        </div>
+    </div>
+    <div class="animais" id="animais">
+        <h1>Animais que eu atendo</h1>
+    </div>
+    <div class="animaiscard">
+        <img src="especies.png" alt="" height="600px">
+     </div>  
+     <div class="animaiscard">
+        <img src="especies2.png" alt="" height="600px">
+     </div>       
+     <div class="contato-texto" id="localizacao">
+            <h1>Localização</h1>
+     </div>
+     <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.1275844124607!2d-46.813043325357754!3d-21.96806590499669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9cb5f4be7e2f5%3A0x8e536d002fc0365f!2sR.%20Daniel%20H%C3%A9lio%20P%C3%A9res%2C%20388%20-%20Jardim%20Recanto%20do%20Jaguari%2C%20S%C3%A3o%20Jo%C3%A3o%20da%20Boa%20Vista%20-%20SP%2C%2013872-269!5e0!3m2!1spt-BR!2sbr!4v1686185281328!5m2!1spt-BR!2sbr" width="1280" height="720" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+    </div>
+    <div class="rodape">
+        <h1>Patolino Veterinário - Todos os direitos reservados</h1>
+        <p>Desenvolvido por Adrian Lima</p>
+    </div>
+    <div id="popup" class="popup">
+        <div class="contato_form">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Agendamento de Consultas</h2>
+            <form name="contato_form" onsubmit="validaForm( event)">
+                Raça do Animal: <input type="text" name="raca"/> <br> <br>
+                Idade do Animal: <input type="text" name="idade"/> <br> <br>
+                Sintomas do Animal: <input type="text" name="sintomas"/> <br> <br>
+                <input class="btnsubmit" id="btns" type="submit" value="Enviar"/> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
